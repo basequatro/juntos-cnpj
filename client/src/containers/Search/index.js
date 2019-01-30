@@ -15,7 +15,6 @@ import {
 
 class Search extends Component {
   state = {
-    isValid: '',
     cnpj: ''
   }
 
@@ -61,7 +60,7 @@ class Search extends Component {
       fetch(uri, constructOptions())
       apolloFetch({ query, variables })
         .then(res => {
-          const cnpjType = res.data.company == null ? false : res.data.company
+          const cnpjType = res.data.company == null ? 'false' : res.data.company
           this.setState({ company: cnpjType })
           console.log('Response', res.data.company == null && false)
         })
@@ -69,7 +68,7 @@ class Search extends Component {
           console.error('error', e)
         })
     } else {
-      console.error('Erro', 'Loguenovamente')
+      console.error('Erro', 'Logue novamente')
     }
   }
 
@@ -100,6 +99,7 @@ class Search extends Component {
                   isValid={company}
                   placeholder='__.___.___/____-__'
                   value={cnpj}
+                  className='custominput'
                   mask={[
                     /\d/,
                     /\d/,

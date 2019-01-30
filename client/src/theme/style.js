@@ -7,6 +7,9 @@ const Style = createGlobalStyle`
         flex: 1;
         justify-content: flex-end;
     }
+    .custominput {
+        width: 100%
+    }
 `
 
 export default Style

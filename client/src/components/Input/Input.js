@@ -66,11 +66,8 @@ const Input = ({ placeholder, mask, value, onChange, isValid, ...rest }) => (
         />
       </Row>
       <Block>
-        {console.log('render')}
         {isValid && isValid.cnpj && <IconOK className='icon-tick' />}
-        {isValid && isValid.cnpj === false ? (
-          <IconNOK className='icon-delete' />
-        ) : null}
+        {isValid === 'false' ? <IconNOK className='icon-delete' /> : null}
       </Block>
     </Wrapper>
   </Fragment>
