@@ -8,7 +8,7 @@ const TitleSC = styled.p`
   font-size: ${props => (props.color ? props.color : 'white')};
   text-align: center;
   font-size: ${props => (props.fontSize ? props.fontSize : '1rem')};
-  font-family: ${v => v.theme.theme.fontFamily};
+  font-family: 'Gill Sans, sans-serif';
 `
 
 const Title = ({

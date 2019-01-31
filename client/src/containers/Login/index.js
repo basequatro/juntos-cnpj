@@ -50,7 +50,5 @@ class Login extends Component {
     )
   }
 }
-Login.propTypes = {
-  history: PropTypes.string.isRequired
-}
+
 export default Login

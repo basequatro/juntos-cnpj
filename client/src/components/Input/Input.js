@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   background-color: white;
   border: 1px solid transparent;
   border-color: ${props => (props.hasError ? 'red' : 'transparent')};
-  font-family: ${v => v.theme.theme.fontFamily};
+  font-family: 'Gill Sans, sans-serif';
   flex-direction: row;
   padding: 2vh;
   align-items: ${props => (props.alignflexEnd ? 'flex-end' : 'none')};
@@ -22,7 +22,7 @@ const Label = styled.label`
   margin-bottom: 15px;
   font-size: 0.9em;
   font-weight: bold;
-  font-family: ${v => v.theme.theme.fontFamily};
+  font-family: 'Gill Sans, sans-serif';
 `
 
 const IconNOK = styled.i`

@@ -12,9 +12,9 @@ const Li = styled.div`
   width: 32px;
   height: 32px;
   line-height: 32px;
-  color: ${v => v.theme.theme.color.primary};
-  border: 2px solid ${v => v.theme.theme.color.primary};
-  font-family: ${v => v.theme.theme.fontFamily};
+  color: #937ef1;
+  border: 2px solid #937ef1;
+  font-family: 'Gill Sans, sans-serif';
   font-size: 1.2rem;
   text-align: center;
 `
@@ -22,7 +22,7 @@ const LiSpan = styled.div`
   align-self: flex-start;
   line-height: 32px;
   color: ${v => v.theme.theme.text};
-  font-family: ${v => v.theme.theme.fontFamily};
+  font-family: 'Gill Sans, sans-serif';
   font-size: 1.2rem;
   padding-left: 20px;
   font-weight: 600;
@@ -37,7 +37,7 @@ const Ol = ({ number, text, children, ...rest }) => (
 
 Ol.propTypes = {
   children: PropTypes.node,
-  number: PropTypes.string,
+  number: PropTypes.number,
   text: PropTypes.string
 }
 

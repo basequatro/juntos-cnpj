@@ -31,7 +31,7 @@ const Text = styled.span`
   color: ${props => (props.color ? props.color : 'black')};
   font-size: 1.2em;
   align-self: 'center';
-  font-family: ${v => v.theme.theme.fontFamily};
+  font-family: 'Gill Sans, sans-serif';
 `
 
 const Button = ({ children, text, icon, background, color, ...props }) => (

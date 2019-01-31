@@ -10,6 +10,6 @@ export default {
     color: '#937ef1',
     icon: '#937ef1'
   },
-  fontFamily: `Gill Sans, sans-serif`,
+  fontFamily: 'Gill Sans, sans-serif',
   fontSize: '2rem'
 }

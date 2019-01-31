@@ -7,21 +7,21 @@ const HeaderSC = styled.div`
     flex: 1,
     flex-direction: row;
     padding: 2vh;
-    background: ${v => v.theme.theme.color.primary}; /* Old browsers */
+    background: #937ef1; /* Old browsers */
     background: -moz-linear-gradient(
     top,
-    ${v => v.theme.theme.color.primary} 0%,
-    ${v => v.theme.theme.color.secondary} 100%
+    #937ef1 0%,
+    #a36cf3 100%
     ); /* FF3.6-15 */
     background: -webkit-linear-gradient(
     top,
-    ${v => v.theme.theme.color.primary} 0%,
-    ${v => v.theme.theme.color.secondary} 100%
+    #937ef1 0%,
+    #a36cf3 100%
     ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
     to bottom,
-    ${v => v.theme.theme.color.primary} 0%,
-    ${v => v.theme.theme.color.secondary} 100%
+    #937ef1 0%,
+    #a36cf3 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${p =>
     p.theme.theme.color.primary}', endColorstr='${p =>

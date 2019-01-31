@@ -6,25 +6,23 @@ const BGSC = styled.div`
   padding: 0;
   flex: 1;
   height: 100%;
-  background: ${v => v.theme.theme.color.primary}; /* Old browsers */
+  background: #937ef1; /* Old browsers */
   background: -moz-linear-gradient(
     top,
-    ${v => v.theme.theme.color.primary} 0%,
-    ${v => v.theme.theme.color.secondary} 100%
+    #937ef1 0%,
+    #a36cf3 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    ${v => v.theme.theme.color.primary} 0%,
-    ${v => v.theme.theme.color.secondary} 100%
+    #937ef1 0%,
+    #a36cf3 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    ${v => v.theme.theme.color.primary} 0%,
-    ${v => v.theme.theme.color.secondary} 100%
+    #937ef1 0%,
+    #a36cf3 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${p =>
-    p.theme.theme.color.primary}', endColorstr='${p =>
-  p.theme.theme.color.secondary}',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#937ef1', endColorstr='#a36cf3',GradientType=0 ); /* IE6-9 */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -34,7 +32,10 @@ const BGSC = styled.div`
 const Background = ({ children, ...rest }) => <BGSC {...rest}>{children}</BGSC>
 
 Background.propTypes = {
-  children: PropTypes.string
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 }
 
 Background.defaultProps = {
